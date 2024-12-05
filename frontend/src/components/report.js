@@ -32,7 +32,7 @@ const Report = ({data, file, threshold}) => {
         };
     
         // Make the POST request to the Flask API to generate and get the report in csv format
-        fetch("http://127.0.0.1:5000/download_report", requestOptions)
+        fetch("https://vrv-security-assignment-ox5t.onrender.com/download_report", requestOptions)
         .then((response) => {
             if (response.ok) {
             return response.blob(); // If the response is valid, get the blob (CSV file)

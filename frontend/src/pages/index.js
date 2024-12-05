@@ -29,7 +29,7 @@ export default function Home() {
       redirect: "follow"
     };
 
-    fetch("http://127.0.0.1:5000/upload_log", requestOptions)
+    fetch("https://vrv-security-assignment-ox5t.onrender.com/upload_log", requestOptions)
       .then((response) => response.json())
       .then((result) => setReport(result))
       .catch((error) => console.error(error));
